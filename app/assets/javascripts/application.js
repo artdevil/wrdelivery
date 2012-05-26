@@ -13,3 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require jquery.nivo.slider.pack
+
+$(window).load(function() {
+        $('#slider').nivoSlider();
+    });

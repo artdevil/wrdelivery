@@ -23,6 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
+          <a class="brand" href="#"></a>
 					<%= link_to "Wrdelivery",root_path, :class => "brand"%>
           <div class="container-fluid nav-collapse">
             <ul class="nav">

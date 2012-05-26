@@ -1,7 +1,7 @@
 .span1
 .span10
 	.row-fluid
-		.span4
+		.span4.well
 			%ul.nav.nav-tabs
 				%li.active
 					%a Top Rating
