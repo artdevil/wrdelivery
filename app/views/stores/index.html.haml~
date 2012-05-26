@@ -1,13 +1,20 @@
 .span1
 .span10
 	.row-fluid
-		.span12
-			.carousel
-				.carousel-inner
-					.active.item
-						= image_tag('http://www.anneahira.com/images/article/toko-bagus.jpg')
-					.item
-						= image_tag('http://motorlama.com/wp-content/uploads/2011/12/DKW-Union-1955.jpg')
-				%a.left.carousel-control{:href => "#myCarousel"} &lsaquo;
-				%a.right.carousel-control{:href => "#myCarousel"} &rsaquo;
+		.span4.well
+			%ul.nav.nav-tabs
+				%li.active
+					%a Top Rating
+				%li
+					%a Brand New
+				%li
+					%a Promo
+			#hot
+				tes
+		.span8
+			.slider-wrapper.theme-default
+				.ribbon
+				#slider.nivoSlider
+					= image_tag('toystory.jpg')
+					= image_tag('up.jpg')
 .span1

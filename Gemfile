@@ -21,6 +21,8 @@ group :assets do
 	gem 'haml'
 	gem 'simple_form'
 	gem "haml-rails"
+	gem "cancan"
+	gem "omniauth-facebook"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 

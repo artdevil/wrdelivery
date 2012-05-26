@@ -1,4 +1,6 @@
 Wrdelivery::Application.routes.draw do
+  devise_for :users
+
 	root :to => 'stores#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.

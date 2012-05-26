@@ -10,4 +10,17 @@
  *
  *= require_self
  *= require bootstrap_and_overrides
+ *= require nivo-slider
+ *= require default
 */
+
+#hot{
+	margin-top: -17px;
+	padding: 5px;
+}
+
+
+.theme-default #slider {
+    width:618px; /* Make sure your images are the same size */
+    height:246px; /* Make sure your images are the same size */
+}
