@@ -23,10 +23,15 @@ group :assets do
 	gem "haml-rails"
 	gem "cancan"
 	gem "omniauth-facebook"
+	gem "activeadmin"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
-
+	gem "webrat"
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :test, :development do
+  gem "rspec-rails"
 end
 
 gem 'jquery-rails'
