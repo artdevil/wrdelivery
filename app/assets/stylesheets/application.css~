@@ -11,15 +11,34 @@
  *= require_self
  *= require bootstrap_and_overrides
  *= require nivo-slider
+ *= require gmaps4rails
  *= require default
 */
+
+/* default */
+abbr{
+	color: red;
+}
+
+footer{
+	border-top: solid;
+	border-top-width: 1px;
+	border-top-color: #d5d5d5;
+	text-align: center;
+}
+
+p.help-block{
+	color: red;
+}
 
 #hot{
 	margin-top: -17px;
 	padding: 5px;
 }
 
+
 .theme-default #slider {
     width:618px; /* Make sure your images are the same size */
     height:246px; /* Make sure your images are the same size */
 }
+

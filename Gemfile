@@ -24,6 +24,8 @@ group :assets do
 	gem "cancan"
 	gem "omniauth-facebook"
 	gem "activeadmin"
+	gem 'rmagick'
+	gem 'gmaps4rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 	gem "webrat"

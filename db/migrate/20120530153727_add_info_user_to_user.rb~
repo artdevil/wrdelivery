@@ -7,6 +7,5 @@ class AddInfoUserToUser < ActiveRecord::Migration
 		add_column :users, :line_3, :string
 		add_column :users, :telephone, :string
 		add_column :users, :mobile, :string
-		add_column :users, :role, :string
   end
 end

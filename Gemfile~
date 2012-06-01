@@ -24,6 +24,7 @@ group :assets do
 	gem "cancan"
 	gem "omniauth-facebook"
 	gem "activeadmin"
+	gem 'rmagick'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 	gem "webrat"
@@ -31,7 +32,7 @@ group :assets do
 end
 
 group :test, :development do
-  gem "rspec-rails", "~> 2.0"
+  gem "rspec-rails"
 end
 
 gem 'jquery-rails'

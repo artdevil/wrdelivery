@@ -1,0 +1,16 @@
+.span8.well
+	%h2 New Store
+	%hr
+	= simple_form_for (@store) do |f|
+		= f.input :name
+		= f.input :address
+		= f.association :university, :include_blank => false
+		= f.label :hari_kerja, :required => :true
+		= f.text_field :work_now
+		= f.text_field :work_end
+		= f.label :jam_kerja, :required => :true
+		= f.text_field :time_now
+		= f.text_field :time_end
+		gmaps4rails()
+.span4.well
+

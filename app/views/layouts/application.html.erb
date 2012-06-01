@@ -12,6 +12,7 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
+		<%= javascript_include_tag "application" %>
   </head>
   <body>
 
@@ -32,10 +33,27 @@
             </ul>
 						<% if user_signed_in? %>
 							<ul class="nav pull-right">
-								<li style="padding-top: 7px;"><%= image_tag current_user.image,:height => '25px',:width => "25px" %></li>
+								<li style="padding-top: 7px;">
+										<%= image_tag current_user.image,:height => '25px',:width => "25px" if current_user.image? %>
+								</li>
 								<li><%= link_to current_user.email,"#" %></li>
 								<li class="divider-vertical"></li>
-              	<li><%= link_to "Logout", destroy_user_session_path,:method => :delete  %></li>
+              	<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dashboard <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<% if current_user.role == "tenant" %>
+											<% if current_user.store.blank? %>
+												<li><%= link_to "Toko", new_store_path %></li>
+											<% else %>
+												<li><%= link_to "Toko", store_path %></li>
+											<% end %>
+																					
+										<% end %>
+										<li><%= link_to "Edit profile", edit_user_registration_path %></li>
+										<li class="divider"></li>
+										<li><%= link_to "Logout", destroy_user_session_path,:method => :delete  %><li>
+									</ul>
+								</li>
 							</ul>
 						<% else %>
 							<ul class="nav pull-right">
@@ -59,11 +77,6 @@
       </footer>
 
     </div> <!-- /container -->
-
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application" %>
 
   </body>
 </html>

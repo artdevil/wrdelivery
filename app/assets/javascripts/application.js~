@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require jquery.nivo.slider.pack
+//= require gmaps4rails/gmaps4rails.googlemaps
 
+$(window).load(function() {
+        $('#slider').nivoSlider();
+    });

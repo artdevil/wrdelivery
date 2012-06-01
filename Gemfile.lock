@@ -70,6 +70,7 @@ GEM
     fastercsv (1.5.5)
     formtastic (2.1.1)
       actionpack (~> 3.0)
+    gmaps4rails (1.5.2)
     haml (3.1.6)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
@@ -155,6 +156,7 @@ GEM
       json (~> 1.4)
     responders (0.9.1)
       railties (~> 3.1)
+    rmagick (2.13.1)
     rspec (2.10.0)
       rspec-core (~> 2.10.0)
       rspec-expectations (~> 2.10.0)
@@ -213,6 +215,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 3.2.1)
   devise
+  gmaps4rails
   haml
   haml-rails
   jquery-rails
@@ -220,6 +223,7 @@ DEPENDENCIES
   meta_search
   omniauth-facebook
   rails (= 3.2.3)
+  rmagick
   rspec-rails
   sass-rails (~> 3.2.3)
   simple_form

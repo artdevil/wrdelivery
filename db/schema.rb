@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120530153727) do
+ActiveRecord::Schema.define(:version => 20120601155206) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -46,6 +46,30 @@ ActiveRecord::Schema.define(:version => 20120530153727) do
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
 
+  create_table "stores", :force => true do |t|
+    t.string   "user_id"
+    t.string   "name"
+    t.string   "address"
+    t.string   "university_id"
+    t.string   "work_now"
+    t.string   "work_end"
+    t.string   "time_now"
+    t.string   "time_end"
+    t.string   "latitude"
+    t.string   "longnitude"
+    t.string   "avatarstore"
+    t.text     "description"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "universities", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -61,6 +85,12 @@ ActiveRecord::Schema.define(:version => 20120530153727) do
     t.datetime "updated_at",                             :null => false
     t.string   "name"
     t.string   "image"
+    t.string   "line_1"
+    t.string   "line_2"
+    t.string   "line_3"
+    t.string   "telephone"
+    t.string   "mobile"
+    t.string   "role"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
