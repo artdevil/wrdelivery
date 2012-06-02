@@ -25,7 +25,7 @@ group :assets do
 	gem "omniauth-facebook"
 	gem "activeadmin"
 	gem 'rmagick'
-	gem 'gmaps4rails'
+	gem "ckeditor"
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 	gem "webrat"

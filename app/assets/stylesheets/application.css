@@ -27,7 +27,11 @@ footer{
 }
 
 p.help-block{
-	color: red;
+	color: #aeaeae;
+}
+
+.small_input{
+	width: 100px;
 }
 
 #hot{
@@ -39,5 +43,13 @@ p.help-block{
 .theme-default #slider {
     width:618px; /* Make sure your images are the same size */
     height:246px; /* Make sure your images are the same size */
+}
+
+#map{
+	margin-bottom: 10px;
+}
+#map_canvas{
+	height: 300px;
+	width: 100%;
 }
 

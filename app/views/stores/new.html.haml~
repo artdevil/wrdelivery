@@ -1,16 +1,26 @@
-.span8.well
+%script{:type => "text/javascript", :src  => "https://maps.googleapis.com/maps/api/js?sensor=false"}
+%script{:type => "text/javascript", :src  => "/assets/maps.js"}
+.span7.well
 	%h2 New Store
 	%hr
 	= simple_form_for (@store) do |f|
+		= f.input :avatarstore, :as => :file, :label => "gambar toko",:hint => 'size picture max 400px x 300px'
 		= f.input :name
 		= f.input :address
 		= f.association :university, :include_blank => false
 		= f.label :hari_kerja, :required => :true
-		= f.text_field :work_now
-		= f.text_field :work_end
+		= f.text_field :work_now,:class => "small_input"
+		= f.text_field :work_end,:class => "small_input"
 		= f.label :jam_kerja, :required => :true
-		= f.text_field :time_now
-		= f.text_field :time_end
-		gmaps4rails()
+		= f.text_field :time_now,:class => "small_input"
+		= f.text_field :time_end,:class => "small_input"
+		= f.label :lokasi_toko, :required => :true
+		= f.text_field :latitude, :disabled => true, :as => :hidden
+		= f.text_field :longnitude, :disabled => true, :as => :hidden
+		#map
+			#map_canvas
+		= f.label :deskripsi_toko
+		= f.input :description, :as => :ckeditor, :label => false, :input_html => { :toolbar => 'Basic' }
+		= f.button :submit, "Create toko", :class => 'btn-primary'
 .span4.well
 

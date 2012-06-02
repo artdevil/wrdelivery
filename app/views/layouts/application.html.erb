@@ -45,7 +45,7 @@
 											<% if current_user.store.blank? %>
 												<li><%= link_to "Toko", new_store_path %></li>
 											<% else %>
-												<li><%= link_to "Toko", store_path %></li>
+												<li><%= link_to "Toko", store_path(current_user.store) %></li>
 											<% end %>
 																					
 										<% end %>

@@ -4,7 +4,7 @@ class CreateStores < ActiveRecord::Migration
       t.string :user_id
       t.string :name
       t.string :address
-      t.string :university
+      t.string :university_id
       t.string :work_now
       t.string :work_end
       t.string :time_now

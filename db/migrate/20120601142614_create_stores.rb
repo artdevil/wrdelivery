@@ -5,6 +5,7 @@ class CreateStores < ActiveRecord::Migration
       t.string :name
       t.string :address
       t.string :university_id
+			t.string :delivery_number
       t.string :work_now
       t.string :work_end
       t.string :time_now

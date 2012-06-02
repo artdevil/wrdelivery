@@ -11,13 +11,12 @@
  *= require_self
  *= require bootstrap_and_overrides
  *= require nivo-slider
- *= require gmaps4rails
  *= require default
 */
 
 /* default */
 abbr{
-	color: red;
+	color: #aeaeae;
 }
 
 footer{
@@ -31,6 +30,10 @@ p.help-block{
 	color: red;
 }
 
+.small_input{
+	width: 100px;
+}
+
 #hot{
 	margin-top: -17px;
 	padding: 5px;
@@ -40,5 +43,13 @@ p.help-block{
 .theme-default #slider {
     width:618px; /* Make sure your images are the same size */
     height:246px; /* Make sure your images are the same size */
+}
+
+#map{
+	margin-bottom: 10px;
+}
+#map_canvas{
+	height: 300px;
+	width: 100%;
 }
 

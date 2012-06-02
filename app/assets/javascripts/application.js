@@ -13,8 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require ckeditor/init
 //= require jquery.nivo.slider.pack
 
 $(window).load(function() {
         $('#slider').nivoSlider();
+
     });
+$(document).ready(function(){
+	$("map").load(initialize());
+});
