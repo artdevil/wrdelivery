@@ -1,6 +1,11 @@
 class StoresController < ApplicationController
 	load_and_authorize_resource  
 	def index
+	  @store = Store.all
+		respond_to do |format|  
+      format.html  
+      format.json { render :json => @store }
+    end
   end
 
   def show

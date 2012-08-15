@@ -34,7 +34,11 @@
 						<% if user_signed_in? %>
 							<ul class="nav pull-right">
 								<li style="padding-top: 7px;">
-										<%= image_tag current_user.image,:height => '25px',:width => "25px" if current_user.image? %>
+										<% if current_user.image? %>
+										  <%= image_tag current_user.image(:thumb),:height => '25px',:width => "25px" %>
+										<% elsif current_user.image_facebook? %>
+										  <%= image_tag current_user.image_facebook,:height => '25px',:width => "25px" %>
+										<% end %>
 								</li>
 								<li><%= link_to current_user.email,"#" %></li>
 								<li class="divider-vertical"></li>

@@ -102,6 +102,7 @@ ActiveRecord::Schema.define(:version => 20120602012911) do
     t.datetime "updated_at",                             :null => false
     t.string   "name"
     t.string   "image"
+    t.string   "image_facebook"
     t.string   "line_1"
     t.string   "line_2"
     t.string   "line_3"
